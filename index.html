@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuada Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+   <script src="script.js" defer></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="container">
+ 
+    <!-- FORM CARD -->
+    <div class="card card--form">
+      <h1 class="title">Tabuada<br>Online</h1>
+      <p class="subtitle">Gere a tabuada de qualquer número instantaneamente.</p>
+ 
+      <form id="calc-form">
+        <div class="field">
+          <label for="calcnum">Tabuada de</label>
+          <input type="number" id="calcnum" name="calcnum" placeholder="ex: 7" required>
+        </div>
+ 
+        <div class="field">
+          <label for="basenum">Até o número</label>
+          <input type="number" id="basenum" name="basenum" placeholder="ex: 10" value="10">
+        </div>
+ 
+        <button type="submit" class="btn">Calcular →</button>
+      </form>
+    </div>
+ 
+    <div class="card card--result">
+      <div class="result-header">
+        <h2 class="result-title">Resultado</h2>
+
+      </div>
+ 
+      <ul class="rows" id="rows">
+        <li class="placeholder">O resultado será exibido aqui</li>
+      </ul>
+    </div>
+  </div>
+  </script>
+</body>
+</html>
+ 
